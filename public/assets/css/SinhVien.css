@@ -1,0 +1,187 @@
+/* Toàn bộ giao diện sinh viên nằm trong .sv-page */
+.sv-page {
+    padding: 20px 40px;
+    font-family: Arial;
+}
+
+/* TIÊU ĐỀ */
+.sv-page .title {
+    text-align: center; /*Căn giữa chữ*/
+    font-size: 45px; /**/
+    font-weight: bold; /*Chữ in đậm*/
+    color: #e55225; /**/
+    margin-bottom: 30px; /*Khoảng cách phía dưới tiêu đề*/
+    text-shadow: 2px 2px 2px #ddd; /*Tạo bóng chữ*/
+}
+
+/* THANH CHỨC NĂNG */
+.sv-page .top-actions {
+    display: flex; /*Sắp xếp các phần tử theo flexbox*/
+    align-items: center; /*Căn giữa theo chiều dọc*/
+    gap: 15px; /*Khoảng cách giữa các phần tử*/
+    margin-bottom: 20px; /*Khoảng cách với bảng bên dưới*/
+    justify-content: center; /* căn giữa giống giao diện đẹp */
+}
+
+/* DROPDOWN */
+.sv-page .class-select {
+    padding: 8px 12px; /*Tạo khoảng cách trong dropdown*/
+    border-radius: 6px; /*Bo góc*/
+    border: 1px solid #ccc; /*Viền màu xám*/
+    font-size: 15px; /**/
+}
+
+/* BUTTON */
+.sv-page .btn {
+    padding: 8px 14px;
+    background: #e55225;
+    color: white;
+    border: none;  /*Không có viền*/
+    border-radius: 6px; /*Bo góc*/
+    cursor: pointer; /*Khi rê chuột hiện hình bàn tay*/
+    display: flex; /*Cho icon + chữ nằm ngang*/
+    align-items: center; /**/
+    gap: 8px; /*Khoảng cách icon và chữ*/
+    font-size: 15px; /**/
+}
+
+.sv-page .btn:hover {
+    background: #d97f00;
+}
+
+/* ===================== */
+/* BẢNG SINH VIÊN */
+/* ===================== */
+
+.table {
+    width: 100%; /*Bảng chiếm toàn bộ chiều ngang*/
+    border-collapse: collapse; /*Gộp viền bảng*/
+    margin-top: 20px; /*Khoảng cách phía trên*/
+}
+
+.table th {
+    background: #f2f2f2; /**/
+    padding: 10px; /**/
+    font-weight: bold; /**/
+    text-align: left; /*Căn trái*/
+    border: 1px solid #ccc; /**/
+    align-content:end; /**/
+    align-items: end; /**/
+}
+
+.table td {
+    padding: 10px;
+    text-align: right;
+    border: 1px solid #ccc;
+    align-content:end;
+    align-items: end;
+}
+
+/* ===================== */
+/* KÍCH THƯỚC CỘT */
+/* ===================== */
+
+.col-stt {
+    width: 50px;
+    text-align: right;
+}
+
+.col-msv {
+    width: 140px;
+}
+
+.col-name {
+    width: 220px;
+    text-align: right;
+    align-items: end;
+}
+
+.col-ngaysinh {
+    width: 130px;
+}
+.col-lop{
+    width: 80px;
+}
+
+.col-gioitinh {
+    width: 110px;
+}
+
+.col-gpa {
+    width: 80px;
+}
+
+.col-trangthai {
+    width: 170px;
+}
+
+.col-hanhdong {
+    width: 150px;
+}
+.status-badge {
+    padding: 4px 10px;
+    border-radius: 12px;
+    background: #e0f7e9;
+    color: #2e7d32;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+
+
+
+/* ===================== */
+/* NÚT HÀNH ĐỘNG */
+/* ===================== */
+
+.action-buttons {
+    display: flex;
+    flex-direction: row;      /* XẾP NGANG */
+    justify-content: center;  /* căn giữa ngang */
+    align-items: center;      /* căn giữa dọc */
+    gap: 10px;                /* khoảng cách 2 nút */
+}
+
+.btn-edit,
+.btn-delete {
+    width: 42px;
+    height: 42px;
+    border-radius: 8px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-edit {
+    background: #e55225;
+}
+
+.btn-delete {
+    background: #ff6b6b;
+}
+
+.search-input {
+    height: 36px;
+    padding: 0 12px;
+    border: 1px solid #d0d0d0;
+    border-radius: 6px;
+    outline: none; /*bỏ viền xanh khi click*/
+    font-size: 14px;
+    transition: all 0.2s ease; /*hiệu ứng mượt*/
+}
+/* NÚT THÊM SINH VIÊN */
+.btn-add {
+    background: #e55225;
+    color: white;
+    text-decoration: none;   /* BỎ GẠCH CHÂN */
+}
+
+.btn-add:hover {
+    background: #d97f00;
+}
+
+
+
+
+

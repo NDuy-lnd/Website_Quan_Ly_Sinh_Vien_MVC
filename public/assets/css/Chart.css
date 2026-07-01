@@ -1,0 +1,58 @@
+.chart-container {
+    background: #fff;
+    border: 1px solid #e3e6f0;
+    border-radius: 0.35rem;
+    box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
+    margin-bottom: 2rem;
+    padding: 20px;
+}
+
+.chart-header {
+    background-color: #f8f9fc;
+    border-bottom: 1px solid #e3e6f0;
+    padding: 15px;
+    font-weight: bold;
+    color: #4e73df;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Container chứa cả 2 biểu đồ */
+.dashboard-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+.dashboard-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+.chart-container {
+    width: 70%;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    overflow: hidden;
+}
+
+.chart-header {
+    background: linear-gradient(135deg, #4e73df, #224abe);
+    color: #fff;
+    padding: 12px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+.chart-body {
+    padding: 20px;
+    height: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

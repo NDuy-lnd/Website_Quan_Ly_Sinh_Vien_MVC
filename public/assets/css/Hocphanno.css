@@ -1,0 +1,37 @@
+.title {
+    text-align: center;
+    font-size: 32px;
+    color: #e74c3c;
+    margin-bottom: 20px;
+}
+
+.filter-box {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.filter-box select {
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.table th {
+    background: #f2f2f2;
+}
+
+.fail {
+    color: red;
+    font-weight: bold;
+}

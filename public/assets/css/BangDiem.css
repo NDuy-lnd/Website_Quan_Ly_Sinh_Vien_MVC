@@ -1,0 +1,53 @@
+.bd-page {
+    padding: 20px;
+}
+
+.bd-page h2 {
+    text-align: center;
+    color: #e55225;
+}
+
+.bd-page select {
+    padding: 8px;
+    margin: 10px 10px 20px 0;
+}
+
+.bd-page table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.bd-page th, .bd-page td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+.btn-add-grade {
+    display: inline-block;
+    padding: 10px 18px;
+    background: #e55225;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.btn-add-grade:hover {
+    background: #c9431d;
+}
+.bd-actions {
+    margin-bottom: 15px;
+}
+
+.bd-actions .btn-add-grade {
+    display: inline-block;
+    padding: 10px 18px;
+    background: #e55225;
+    color: white;
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+

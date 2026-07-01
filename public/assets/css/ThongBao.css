@@ -1,0 +1,78 @@
+:root { 
+    --main-color: #e55225; 
+}
+
+.sv-page { 
+    padding: 20px; 
+}
+
+.title { 
+    color: var(--main-color);
+    font-weight: 900; 
+    margin-bottom: 20px; 
+}
+
+.top-actions { 
+    display: flex; 
+    gap: 10px; 
+    margin-bottom: 20px; 
+    align-items: center; 
+}
+
+.btn { 
+    background: var(--main-color); 
+    color: white; 
+    border: none; 
+    padding: 8px 15px; 
+    border-radius: 20px; 
+    cursor: pointer; 
+    font-weight: bold; 
+}
+
+.btn-edit { 
+    background: #f39c12; 
+}
+
+.btn-delete { 
+    background: #e74c3c; 
+}
+
+.class-select, .search-input, .form-control-sn { 
+    border: 1px solid #ddd; 
+    border-radius: 20px; 
+    padding: 8px 15px; 
+    outline: none; 
+}
+.form-control-sn { 
+    border-radius: 8px; 
+    width: 100%; 
+}
+
+.table { 
+    width: 100%; 
+    border-collapse: collapse; 
+}
+
+.table th, .table td { 
+    border: 1px solid #ddd; 
+    padding: 12px; 
+    text-align: center; 
+}
+
+.table th { 
+    background: #f9f9f9; 
+}
+
+.form-container { 
+    background: white; 
+    padding: 25px; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+}
+
+.form-group label { 
+    display: block; 
+    margin-bottom: 5px; 
+    color: var(--main-color); 
+    font-weight: bold; 
+}

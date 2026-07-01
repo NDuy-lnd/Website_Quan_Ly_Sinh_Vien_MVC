@@ -1,0 +1,44 @@
+body {
+    background: linear-gradient(135deg, #ff8c00, #ff5722);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial;
+}
+
+.auth-box {
+    background: white;
+    padding: 40px;
+    width: 360px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.auth-box h2 span {
+    color: #ff5722;
+}
+
+.auth-box input {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.auth-box button {
+    width: 100%;
+    padding: 12px;
+    background: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.auth-box .error {
+    color: red;
+    font-size: 14px;
+}

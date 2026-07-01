@@ -1,0 +1,252 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    padding-top: 60px;
+}
+
+/* HEADER */
+.header {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 0 20px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+
+.hamburger {
+    font-size: 26px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.title {
+    font-size: 40px;
+    font-weight: 900;
+    color: #e55225;
+    margin: 0;
+}
+
+/* SIDEBAR */
+.sidebar {
+    position: fixed;
+    top: 60px; /* NGANG HÀNG HEADER */
+    left: 0;
+    width: 240px;
+    height: calc(100vh - 60px);
+    background: #e55225;
+    padding-top: 10px;
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+/* TRẠNG THÁI THU GỌN */
+.sidebar.collapsed {
+    width: 60px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* MENU ITEM */
+.sidebar li {
+    padding: 12px 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: white;
+    cursor: pointer;
+    border-radius: 30px;  /* bo tròn giống giao diện mẫu */
+    margin: 8px 10px;
+    transition: 0.2s ease;
+}
+/* HOVER */
+.sidebar li:hover {
+    background: rgba(255, 255, 255, 0.25);
+}
+/* ACTIVE MENU (đang được chọn) */
+.sidebar li.active {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+
+/* ICON */
+.icon {
+    font-size: 20px;
+}
+.text {
+    color: white;
+    font-weight: bold;
+}
+
+/* ẨN TEXT KHI THU GỌN */
+.sidebar.collapsed .text {
+    display: none;
+}
+/* Khi thu gọn vẫn bo tròn và hover đẹp */
+.sidebar.collapsed li {
+    justify-content: center;
+    padding: 12px;
+}
+
+.sidebar.collapsed li:hover {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+
+
+/* NỘI DUNG TRANG */
+.content {
+    margin-left: 60px; /* mặc định menu thu gọn */
+    margin-top: 60px;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+
+/*Nội dung chính*/
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 200px; /* Text chiếm hết, logo tự co */
+    gap: 40px;
+    align-items: stretch;
+    padding: 40px;
+    background: #fff;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.hero-text > h1 {
+    font-size: 36px;
+    line-height: 1.3;   
+    margin-bottom: 15px;
+}
+
+.hero-title {
+    color: #e55225;
+    font-weight: 800;
+}
+
+.hero-desc {
+    color: #777;
+    font-weight: 500;
+}
+
+.hero-highlight {
+    color: #e55225;
+    font-weight: 700;
+}
+
+/* Đoạn mô tả */
+.hero-text > p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+    max-width: 540px; 
+}
+
+/* Logo */
+.hero-logo {
+    display: flex;
+    justify-content: right; /* đẩy logo sang mép phải */
+    align-items: center;
+}
+
+.hero-logo > img {
+    height: 90%;   /* logo cao bằng cột text */
+    width: auto;    /* giữ tỉ lệ */
+}
+
+/* ẢNH MINH HOẠ BÊN DƯỚI HERO */
+.hero-image {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;   
+    align-items: center;
+}
+
+.hero-image>img {
+    width: 100%;
+    max-width: 900px;   /* khống chế giống mẫu */
+    height: auto;
+    border-radius: 12px; /* bo nhẹ cho đẹp */
+
+    /* ĐỔ BÓNG */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+}
+
+.hero-caption {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    max-width: 900px;
+}
+
+
+
+/* FEATURES */
+.features {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.features-title {
+    font-size: 26px;
+    color: #e55225;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+/* GRID ICON */
+.features-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* ITEM */
+.feature-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.feature-icon {
+    width: 70px;
+    height: 70px;
+    background: #f2f6fb;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #e55225;
+}
+
+.feature-item p {
+    font-size: 14px;
+    color: #444;
+    font-weight: 500;
+}
+
+
+
+
+/* KHI MENU MỞ RỘNG → CONTENT DỊCH RA */
+.sidebar:not(.collapsed) ~ .content {
+    margin-left: 240px;
+}
