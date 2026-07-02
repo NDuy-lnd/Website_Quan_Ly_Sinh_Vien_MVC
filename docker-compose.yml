@@ -1,0 +1,25 @@
+services:
+  web:
+    build: .
+    container_name: qlsv-web
+    ports:
+      - "80:80"
+    depends_on:
+      - db
+
+  db:
+    image: mysql:8
+    container_name: qlsv-db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: quanlysinhvien
+      MYSQL_USER: qlsv_user
+      MYSQL_PASSWORD: 123456
+    volumes:
+      - db_data:/var/lib/mysql
+      - ./quanlysinhvien.sql:/docker-entrypoint-initdb.d/quanlysinhvien.sql
+
+volumes:
+  db_data:
+
